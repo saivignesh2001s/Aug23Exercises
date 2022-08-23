@@ -4,11 +4,12 @@
     {
         static void Main(string[] args)
         {
-            string deptname;
+            string deptname=" ";
             Console.WriteLine("Enter deptname");
             deptname=Console.ReadLine();
-            
-            Console.WriteLine(deptnames.deptname);
+            int k=(int)deptnames.Purchases;
+
+            Console.WriteLine(k);
             Console.ReadLine();
            
            
