@@ -8,11 +8,11 @@
            
             
                 Console.WriteLine("Enter EmpNo");
-                b1.EmpNo=Convert.ToInt32(Console.ReadLine());
+                b1.empno=Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter Empname");
-                b1.Ename = Console.ReadLine();
+                b1.ename = Console.ReadLine();
                 Console.WriteLine("Enter salary");
-                b1.Salary= Convert.ToSingle(Console.ReadLine());
+                b1.salary= Convert.ToSingle(Console.ReadLine());
                 Console.WriteLine("Enter DeptNo");
                 b1.Dno = Convert.ToInt32(Console.ReadLine());
 
@@ -36,7 +36,14 @@
         {
             set
             {
-                EmpNo = value;
+                if (EmpNo == 0)
+                {
+                    Console.WriteLine("EmpNumber can't be null");
+                }
+                else
+                {
+                    EmpNo = value;
+                }
             }
             get
             {
@@ -47,12 +54,22 @@
         {
             set
             {
-                Ename = value;
+                if (string.IsNullOrEmpty(Ename))
+                {
+                    Console.WriteLine("Name not valid");
+                }
+                else
+                {
+                    Ename = value;
+                    
+                }
             }
             get
             {
                 return Ename;
             }
+            
+           
         }
         public float salary
         {
@@ -69,7 +86,14 @@
         {
             set
             {
-                deptno = value;
+                if (deptno == 0)
+                {
+                    Console.WriteLine("DeptNum can't be null");
+                }
+                else
+                {
+                    deptno = value;
+                }
             }
             get
             {
