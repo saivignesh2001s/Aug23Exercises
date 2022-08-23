@@ -4,26 +4,22 @@
     {
         static void Main(string[] args)
         {
-            employees[] arr = new employees[4];
+            employees b1 = new employees();
            
-            for(int i=0;i<arr.Length; i++)
-            {
+            
                 Console.WriteLine("Enter EmpNo");
-                arr[i].EmpNo=Convert.ToInt32(Console.ReadLine());
+                b1.EmpNo=Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter Empname");
-                arr[i].Ename = Console.ReadLine();
+                b1.Ename = Console.ReadLine();
                 Console.WriteLine("Enter salary");
-                arr[i].Salary= Convert.ToSingle(Console.ReadLine());
+                b1.Salary= Convert.ToSingle(Console.ReadLine());
                 Console.WriteLine("Enter DeptNo");
-                arr[i].Dno = Convert.ToInt32(Console.ReadLine());
+                b1.Dno = Convert.ToInt32(Console.ReadLine());
 
 
-            }
-            Console.WriteLine("Enter the details");
-            for(int i = 0; i < 4; i++)
-            {
-                arr[i].display();
-            }
+                Console.WriteLine("Print the details");
+                b1.display();
+            
             Console.ReadLine();
             
                 
