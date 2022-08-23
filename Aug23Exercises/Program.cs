@@ -7,9 +7,31 @@
             string deptname=" ";
             Console.WriteLine("Enter deptname");
             deptname=Console.ReadLine();
-            int k=(int)deptnames.Purchases;
+            int k;
 
-            Console.WriteLine(k);
+            switch (deptname)
+            {
+                case "Purchases":
+                    k = (int)deptnames.Purchases;
+                    Console.WriteLine(k);
+                    break;
+                case "Sales":
+                    k = (int)deptnames.Sales;
+                    Console.WriteLine(k);
+                    break;
+                case "Training":
+                    k = (int)deptnames.Training;
+                    Console.WriteLine(k);
+                    break;
+                case "Accounts":
+                    k = (int)deptnames.Accounts;
+                    Console.WriteLine(k);
+                    break;
+                    default:
+                    break;
+
+            }
+
             Console.ReadLine();
            
            
