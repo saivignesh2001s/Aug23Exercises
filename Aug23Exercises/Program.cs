@@ -5,17 +5,20 @@
         static void Main(string[] args)
         {
             employees b1 = new employees();
-           
-            
-                Console.WriteLine("Enter EmpNo");
-                b1.EmpNo=Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Enter Empname");
-                b1.Ename = Console.ReadLine();
-                Console.WriteLine("Enter salary");
-                b1.Salary= Convert.ToSingle(Console.ReadLine());
-                Console.WriteLine("Enter DeptNo");
-                b1.Dno = Convert.ToInt32(Console.ReadLine());
 
+            int EmpNo;
+            string Ename;
+            float Salary;
+            int Dno;
+                Console.WriteLine("Enter EmpNo");
+                EmpNo=Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter Empname");
+                Ename = Console.ReadLine();
+                Console.WriteLine("Enter salary");
+                Salary= Convert.ToSingle(Console.ReadLine());
+                Console.WriteLine("Enter DeptNo");
+                Dno = Convert.ToInt32(Console.ReadLine());
+            b1.AcceptData(EmpNo, Ename, Salary, Dno);
 
                 Console.WriteLine("Print the details");
                 b1.display();
@@ -32,49 +35,12 @@
         public string Ename;
         public float Salary;
         public int deptno;
-        public int empno
+       public void AcceptData(int empno,string ename,float salary,int dno)
         {
-            set
-            {
-                EmpNo = value;
-            }
-            get
-            {
-                return EmpNo;
-            }
-        }
-        public string ename
-        {
-            set
-            {
-                Ename = value;
-            }
-            get
-            {
-                return Ename;
-            }
-        }
-        public float salary
-        {
-            set
-            {
-                Salary = value;
-            }
-            get
-            {
-                return Salary;
-            }
-        }
-        public int Dno
-        {
-            set
-            {
-                deptno = value;
-            }
-            get
-            {
-                return deptno;
-            }
+            EmpNo = empno;
+            Ename = ename;
+            Salary = salary;
+            deptno = dno;
         }
 
        
