@@ -8,11 +8,11 @@
            
             
                 Console.WriteLine("Enter EmpNo");
-                b1.EmpNo=Convert.ToInt32(Console.ReadLine());
+                b1.empno=Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter Empname");
-                b1.Ename = Console.ReadLine();
+                b1.ename = Console.ReadLine();
                 Console.WriteLine("Enter salary");
-                b1.Salary= Convert.ToSingle(Console.ReadLine());
+                b1.salary= Convert.ToSingle(Console.ReadLine());
                 Console.WriteLine("Enter DeptNo");
                 b1.Dno = Convert.ToInt32(Console.ReadLine());
 
