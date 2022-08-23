@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             employees b1 = new employees();
-
+           
             int EmpNo;
             string Ename;
             float Salary;
