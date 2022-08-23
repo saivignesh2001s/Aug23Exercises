@@ -9,11 +9,11 @@
             for(int i=0;i<arr.Length; i++)
             {
                 Console.WriteLine("Enter EmpNo");
-                arr[i].EmpNo=Convert.ToInt32(Console.ReadLine());
+                arr[i].empno=Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter Empname");
-                arr[i].Ename = Console.ReadLine();
+                arr[i].ename = Console.ReadLine();
                 Console.WriteLine("Enter salary");
-                arr[i].Salary= Convert.ToSingle(Console.ReadLine());
+                arr[i].salary= Convert.ToSingle(Console.ReadLine());
                 Console.WriteLine("Enter DeptNo");
                 arr[i].Dno = Convert.ToInt32(Console.ReadLine());
 
